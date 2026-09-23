@@ -1,0 +1,27 @@
+{
+  "students": [
+    {
+      "name": "Raj",
+      "email": "rwr2.mohammadzafar.as@gmail.com",
+      "age": "12",
+      "course": "Full-stack",
+      "id": "cpkNaf3Rm8c"
+    },
+    {
+      "name": "Ramesh",
+      "email": "ramesh@gmail.com",
+      "age": "20",
+      "course": "UI-UX",
+      "id": "2eCZmHLtUqg"
+    },
+    {
+      "name": "Raj",
+      "email": "rwr2.mohammadzafar.as@gmail.com",
+      "age": "12",
+      "course": "Full-stack",
+      "id": "t_oNKqIvkOw"
+    }
+  ],
+  "movies": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
