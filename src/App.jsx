@@ -9,6 +9,7 @@ function App() {
   const API = "http://localhost:3000/students";
   let [isadd, setIsAdd] = useState(true);
   const [id, setId] = useState(null);
+  const [search,setSearch] = useState("");
 
   fetch(API, {
     method: "GET",
@@ -28,8 +29,8 @@ function App() {
   const handleSubmit = (e) => {
     // e.preventDefault();
     const user = {
-        name, email, age, course
-      }
+      name, email, age, course
+    }
     if (isadd) {
       localStorage.setItem("id", null);
       fetch(API, {
@@ -39,7 +40,7 @@ function App() {
         },
         body: JSON.stringify(user)
       });
-    }else{
+    } else {
       fetch(`${API}/${id}`, {
         method: "PUT",
         headers: {
@@ -68,6 +69,9 @@ function App() {
     setAge(element.age);
     setCourse(element.course);
   }
+  useEffect(()=>{
+    console.log("here");
+  },[search]);
 
   useEffect(() => {
 
@@ -87,10 +91,27 @@ function App() {
           <br />
           <button onClick={handleSubmit}>{(isadd) ? "Add" : "Edit"}</button>
         </form>
+      </div>  
+      <br />
+      <br />
+
+      <div className="text-center">
+        <input type="text" placeholder="Search Here" onChange={(e)=>{setSearch(e.target.value)}} />
       </div>
+
+      <div>
+          {
+           userData.map((element,index)=>{
+            return <button key={index}>{index+1}</button>
+           })
+          }
+      </div>
+
       <div className="  p-4 m-3 row">
         {
-          userData.map((element, index) => {
+          userData.filter((element)=>{
+            return element.name.includes(search);
+          }).map((element, index) => {
             return (
               <div className="   col-4 p-4" key={index}>
                 <main className="shadow p-2 d-flex flex-column gap-2">

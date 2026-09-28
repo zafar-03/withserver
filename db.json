@@ -1,5 +1,76 @@
 {
-  "students": [],
+  "students": [
+  {
+    "id": 1,
+    "name": "Raj Patel",
+    "email": "raj@gmail.com",
+    "age": 20,
+    "course": "React JS"
+  },
+  {
+    "id": 2,
+    "name": "Sahil Shah",
+    "email": "sahil@gmail.com",
+    "age": 21,
+    "course": "Node JS"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Mehta",
+    "email": "rahul@gmail.com",
+    "age": 22,
+    "course": "Python"
+  },
+  {
+    "id": 4,
+    "name": "Dharmik Joshi",
+    "email": "dharmik@gmail.com",
+    "age": 19,
+    "course": "JavaScript"
+  },
+  {
+    "id": 5,
+    "name": "Harshit Patel",
+    "email": "harshit@gmail.com",
+    "age": 23,
+    "course": "MERN Stack"
+  },
+  {
+    "id": 6,
+    "name": "Mihir Desai",
+    "email": "mihir@gmail.com",
+    "age": 20,
+    "course": "MongoDB"
+  },
+  {
+    "id": 7,
+    "name": "Khushi Shah",
+    "email": "khushi@gmail.com",
+    "age": 21,
+    "course": "HTML & CSS"
+  },
+  {
+    "id": 8,
+    "name": "Diya Parmar",
+    "email": "diya@gmail.com",
+    "age": 22,
+    "course": "React JS"
+  },
+  {
+    "id": 9,
+    "name": "Smit Rathod",
+    "email": "smit@gmail.com",
+    "age": 19,
+    "course": "Node JS"
+  },
+  {
+    "id": 10,
+    "name": "Nandani Patel",
+    "email": "nandani@gmail.com",
+    "age": 20,
+    "course": "Python"
+  }
+],
   "movies": [],
   "$schema": "./node_modules/json-server/schema.json"
 }
